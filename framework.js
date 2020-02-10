@@ -1,4 +1,4 @@
-const endpoint = 'http://www.kulturarvsdata.se/';
+const endpoint = 'https://www.kulturarvsdata.se/';
 const select = document.querySelector('#orgSelect');
 
 function populateOrgsSelect() {
