@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>K-samsök - Dataportal</title>
+    <title>Attributionskrav utan känd upphovsman</title>
 
     <link href="style.css" rel="stylesheet">
 
@@ -32,40 +32,22 @@
     <nav class="raa-nav m-b-small">
       <img src="assets/soch-logo.svg">
       <ul>
-        <li><a href="https://www.raa.se/ksamosok">K-samsök</a></li>
+        <li><a href="https://www.raa.se/ksamsok">K-samsök</a></li>
       </ul>
     </nav>
 
     <main>
-      <h1>Dataportal</h1>
-
-      <ul class="raa-large-list">
-        <li>
-          <a class="interactive" href="possible-public-domain.html">
-            <h2>Fotografier tagna innan 1969 utan Public Domain deklaration</h2>
-          </a>
-        </li>
-        <li>
-          <a class="interactive" href="photos-created-before-1826.html">
-            <h2>Fotografier tagna innan 1826</h2>
-          </a>
-        </li>
-        <li>
-          <a class="interactive" href="images-without-license.html">
-            <h2>Bilder utan angiven licens</h2>
-          </a>
-        </li>
-        <li>
-          <a class="interactive" href="objects-created-in-the-future.html">
-            <h2>Objekt skapade i framtiden</h2>
-          </a>
-        </li>
-        <li>
-          <a class="interactive" href="attribution-without-author.html">
-            <h2>Attributionskrav utan känd upphovsman</h2>
-          </a>
-        </li>
-      </ul>
+      <h1>Attributionskrav utan känd upphovsman</h1>
+      <form>
+        <label>Välj institution
+          <select class="raa-input" id="orgSelect"></select>
+        </label>
+        <button id="runBtn" class="raa-button raa-button-confirm m-tb-small">Vidare</button>
+      </form>
+      <section id="table-container"></section>
     </main>
+
+    <script src="framework.js"></script>
+    <script src="attribution-without-author.js"></script>
   </body>
 </html>
