@@ -1,6 +1,6 @@
 document.querySelector('#runBtn').addEventListener('click', e => {
   e.preventDefault();
-  const url = endpoint + 'ksamsok/api?x-api=test&method=search&hitsPerPage=500&fields=url,mediaLicense,create_fromTime,create_toTime,byline,copyright&query=itemType=foto%20AND%20thumbnailExists=j%20AND%20NOT%20mediaLicense=%22*pdmark%22%20AND%20create_fromTime%3C1969%20AND%20NOT%20create_fromTime%3C1826%20AND%20serviceOrganization=' + select.value + '&recordSchema=xml';
+  const url = endpoint + 'ksamsok/api?x-api=test&method=search&hitsPerPage=500&fields=url,mediaLicense,create_fromTime,create_toTime,byline,copyright&query=itemType=foto%20AND%20thumbnailExists=j%20AND%20NOT%20mediaLicense=%22*pdmark%22%20AND%20create_fromTime%3C1971%20AND%20NOT%20create_fromTime%3C1826%20AND%20serviceOrganization=' + select.value + '&recordSchema=xml';
 
   fetch(url, {
     headers: {
